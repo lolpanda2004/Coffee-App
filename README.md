@@ -30,20 +30,15 @@ A beautiful coffee ordering application built with Flutter that allows users to:
    cd Coffee-App
 
 2. **Install Dependencies**:
-   '''bash
+   ```bash
    flutter pub get
 
 3. **Run the app**:
-   '''bash
+   ```bash
    flutter run
 
-## 🔧 Configuration
-Create `lib/config/keys.dart` with:
-```dart
-const stripePublicKey = 'pk_test_your_key';
-const googleMapsKey = 'your_maps_key';
-
 ## Project Structure
+```bash
 lib/
 ├── main.dart # App entry point
 ├── models/ # Data models
