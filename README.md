@@ -1,7 +1,5 @@
 # ☕ Flutter Coffee Ordering App
 
-![App Banner](https://via.placeholder.com/800x400/5C3317/FFFFFF?text=Coffee+Ordering+App) *(Replace with real screenshots)*
-
 A beautiful coffee ordering application built with Flutter that allows users to:
 - Browse coffee menu
 - Customize drink options
@@ -16,9 +14,7 @@ A beautiful coffee ordering application built with Flutter that allows users to:
 - **Dark/Light mode** support
 
 ## 📱 Screenshots
-| Home Screen | Menu | Cart |
-|-------------|------|------|
-| ![Home](https://via.placeholder.com/200x400) | ![Menu](https://via.placeholder.com/200x400) | ![Cart](https://via.placeholder.com/200x400) |
+
 
 ## 🛠️ Tech Stack
 - **Flutter** 3.16+
@@ -32,3 +28,38 @@ A beautiful coffee ordering application built with Flutter that allows users to:
    ```bash
    git clone https://github.com/lolpanda2004/Coffee-App.git
    cd Coffee-App
+
+2. **Install Dependencies**:
+   '''bash
+   flutter pub get
+
+3. **Run the app**:
+   '''bash
+   flutter run
+
+## 🔧 Configuration
+Create `lib/config/keys.dart` with:
+```dart
+const stripePublicKey = 'pk_test_your_key';
+const googleMapsKey = 'your_maps_key';
+
+## Project Structure
+lib/
+├── main.dart # App entry point
+├── models/ # Data models
+│ ├── coffee.dart # Coffee item model
+│ ├── user.dart # User model
+│ └── order.dart # Order model
+├── screens/ # App screens
+│ ├── auth/ # Authentication screens
+│ │ ├── login.dart # Login screen
+│ │ └── register.dart # Registration screen
+│ ├── home.dart # Home screen
+│ ├── menu.dart # Menu screen
+│ └── cart.dart # Shopping cart screen
+├── services/ # Business logic
+│ ├── auth.dart # Authentication service
+│ └── database.dart # Database service
+└── widgets/ # Reusable components
+├── coffee_card.dart # Coffee item widget
+└── app_bar.dart # Custom app bar
